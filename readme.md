@@ -1,6 +1,6 @@
 ## My Note
 - This is the original project file and **all of my work are in the _dev_ branch**.
-- **Check _solutions.md_ file in the _dev branch_** for the _explanation_ of what I did.
+- **Check [solution.md](https://github.com/Codart-7/openfabric-test/blob/dev/solution.md) file in the _dev branch_** for the _explanation_ of what I did.
 
 ## Requirement
 
