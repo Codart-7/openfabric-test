@@ -1,3 +1,7 @@
+## My Note
+- This is the original project file and **all of my work are in the _dev_ branch**.
+- **Check _solutions.md_ file in the _dev branch_** for the _explanation_ of what I did.
+
 ## Requirement
 
 Your task is to add the necessary features to the current project's API blueprint structure to enable
