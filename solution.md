@@ -9,4 +9,5 @@ NB: The time provided is not enought for me to learn how to write tests
 ### List workers (paginated) endpoint
 - Changed the repository fron CrudRepository to JpaRepository
 - Install the dependencies in the build.gradle file (lines 41 to 43)
-- Database migration
+- Database migration in the table-schema.xml file
+- Updated worker model, created worker service and updated worker controller

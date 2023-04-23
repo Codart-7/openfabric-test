@@ -1,9 +1,7 @@
 package ai.openfabric.api.model;
 
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
@@ -13,8 +11,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 
-@NoArgsConstructor
-@AllArgsConstructor
 @Entity()
 public class Worker extends Datable {
 
@@ -39,7 +35,7 @@ public class Worker extends Datable {
 
     @Getter
     @Setter
-    private String ipAddress;
+    private String ip_address;
 
     @Getter
     @Setter
@@ -48,14 +44,15 @@ public class Worker extends Datable {
     
     @Getter
     @Setter
-    private String containerId;
+    private String container_id;
+
 
     @Getter
     @Setter
-    private String hostName;
+    private String host_name;
 
     @Getter
     @Setter
-    private String networkName;
+    private String network_name;
 
 }
