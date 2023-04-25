@@ -5,10 +5,13 @@ import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 
 
 @Entity()
@@ -31,15 +34,17 @@ public class Worker extends Datable {
 
     @Getter
     @Setter
+    private String image_id;
+
+    @Getter
+    @Setter
     private String status;
 
     @Getter
     @Setter
-    private String ip_address;
-
-    @Getter
-    @Setter
-    private int port;
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "worker_port_id", referencedColumnName = "id")
+    private WorkerPort port;
 
     
     @Getter
@@ -49,10 +54,6 @@ public class Worker extends Datable {
 
     @Getter
     @Setter
-    private String host_name;
-
-    @Getter
-    @Setter
-    private String network_name;
+    private String state;
 
 }

@@ -39,17 +39,17 @@
             <column name="name" type="varchar(255)"/>
             <column name="image" type="varchar(255)"/>
             <column name="status" type="varchar(255)"/>
-            <column name="ip_address" type="varchar(255)"/>
-            <column name="port" type="integer"/>
+            <column name="image_id" type="varchar(255)"/>
+            
             <column name="container_id" type="varchar(255)"/>
-            <column name="host_name" type="varchar(255)"/>
-            <column name="network_name" type="varchar(255)"/>
+            <column name="state" type="varchar(255)"/>
 
             <column name="created_at" type="DATETIME"/>
             <column name="updated_at" type="DATETIME"/>
             <column name="deleted_at" type="DATETIME"/>
         </createTable>
     </changeSet>
+
 
 
 </databaseChangeLog>

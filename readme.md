@@ -4,8 +4,7 @@
 
 ## Requirement
 
-Your task is to add the necessary features to the current project's API blueprint structure to enable
-it to manage **Docker** containers, also referred to as workers, as fallows:
+Your task is to add the necessary features to the current project's API blueprint structure to enable it to manage **Docker** containers, also referred to as workers, as follows:
 
 🔄 Integrate the 🐳 Docker Java library (https://github.com/docker-java/docker-java/blob/main/docs/getting_started.md) to enable connect and manage 👷‍♀️ workers.
 
