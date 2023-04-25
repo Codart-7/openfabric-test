@@ -30,5 +30,14 @@ public class WorkerController {
         return workerService.listWorkers(page, size);
     }
 
+    @PostMapping(path="/stop")
+    public @ResponseBody Boolean stopWorker(@RequestBody String id){
+        return workerService.stopWorker(id);
+    }
+
+    @PostMapping(path="/start")
+    public @ResponseBody Boolean startWorker(@RequestBody String id){
+        return workerService.startWorker(id);
+    }
 
 }
